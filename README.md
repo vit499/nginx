@@ -41,4 +41,3 @@ server {
       - /home/user/work/mysite2:/usr/www/mysite2
 
 и файл mysite2.conf в котором вместо mysite1 будет mysite2.
-````
