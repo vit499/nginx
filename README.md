@@ -21,14 +21,16 @@
 
 Теперь в контейнере nginx для будет создана папка /usr/www/mysite1, путь до нее нужно указать в конфигурации (п.2)
 
-2. В папку data/nginx нужно добавьте файл с названием mysite1.conf с таким содержимым
+2. В папку data/nginx добавьте файл с названием mysite1.conf с таким содержимым
 
-````server {
-listen 80;
-server_name mysite1.mysite.ru; # тут mysite.ru нужно заменить на реальное имя сайта
-root /usr/www/mysite1;
-index index.html;
-}```
+```
+server {
+  listen 80;
+  server_name mysite1.mysite.ru; # тут mysite.ru нужно заменить на реальное имя сайта
+  root /usr/www/mysite1;
+  index index.html;
+}
+```
 
 3. Сохраните изменения и запустите docker compose up -d.
 
